@@ -14,7 +14,7 @@
 | Ajustes na API              |     :white_check_mark:     |
 | Configurando rotas          |     :white_check_mark:     |
 | Configurando Reactotron     |     :white_check_mark:     |
-| Rotas privadas              | :eight_pointed_black_star: |
+| Rotas privadas              |     :white_check_mark:     |
 | Layouts por página          | :eight_pointed_black_star: |
 | Estilos globais             | :eight_pointed_black_star: |
 | Utilizando Root Import      | :eight_pointed_black_star: |
