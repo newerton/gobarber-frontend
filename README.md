@@ -10,7 +10,7 @@
 
 | Tools                       |            Done            |
 | --------------------------- | :------------------------: |
-| Estrutura configurada       | :eight_pointed_black_star: |
+| Estrutura configurada       |     :white_check_mark:     |
 | Ajustes na API              | :eight_pointed_black_star: |
 | Configurando rotas          | :eight_pointed_black_star: |
 | Configurando Reactotron     | :eight_pointed_black_star: |
