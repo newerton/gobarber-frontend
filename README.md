@@ -13,7 +13,7 @@
 | Estrutura configurada       |     :white_check_mark:     |
 | Ajustes na API              |     :white_check_mark:     |
 | Configurando rotas          |     :white_check_mark:     |
-| Configurando Reactotron     | :eight_pointed_black_star: |
+| Configurando Reactotron     |     :white_check_mark:     |
 | Rotas privadas              | :eight_pointed_black_star: |
 | Layouts por página          | :eight_pointed_black_star: |
 | Estilos globais             | :eight_pointed_black_star: |
