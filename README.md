@@ -20,7 +20,7 @@
 | Utilizando Root Import      |     :white_check_mark:     |
 | Estilização da autenticação |     :white_check_mark:     |
 | Utilizando Unform           |     :white_check_mark:     |
-| Validações                  | :eight_pointed_black_star: |
+| Validações                  |     :white_check_mark:     |
 | Configurando store          | :eight_pointed_black_star: |
 | Autenticação                | :eight_pointed_black_star: |
 | Armazenando perfil          | :eight_pointed_black_star: |
