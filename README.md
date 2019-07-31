@@ -18,7 +18,7 @@
 | Layouts por página          |     :white_check_mark:     |
 | Estilos globais             |     :white_check_mark:     |
 | Utilizando Root Import      |     :white_check_mark:     |
-| Estilização da autenticação | :eight_pointed_black_star: |
+| Estilização da autenticação |     :white_check_mark:     |
 | Utilizando Unform           | :eight_pointed_black_star: |
 | Validações                  | :eight_pointed_black_star: |
 | Configurando store          | :eight_pointed_black_star: |
