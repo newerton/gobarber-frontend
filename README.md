@@ -16,7 +16,7 @@
 | Configurando Reactotron     |     :white_check_mark:     |
 | Rotas privadas              |     :white_check_mark:     |
 | Layouts por página          |     :white_check_mark:     |
-| Estilos globais             | :eight_pointed_black_star: |
+| Estilos globais             |     :white_check_mark:     |
 | Utilizando Root Import      | :eight_pointed_black_star: |
 | Estilização da autenticação | :eight_pointed_black_star: |
 | Utilizando Unform           | :eight_pointed_black_star: |
