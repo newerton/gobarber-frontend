@@ -22,7 +22,7 @@
 | Utilizando Unform           |     :white_check_mark:     |
 | Validações                  |     :white_check_mark:     |
 | Configurando store          |     :white_check_mark:     |
-| Autenticação                | :eight_pointed_black_star: |
+| Autenticação                |     :white_check_mark:     |
 | Armazenando perfil          | :eight_pointed_black_star: |
 | Persistindo autenticação    | :eight_pointed_black_star: |
 | Loading da autenticação     | :eight_pointed_black_star: |
