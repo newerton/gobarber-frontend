@@ -21,7 +21,7 @@
 | Estilização da autenticação |     :white_check_mark:     |
 | Utilizando Unform           |     :white_check_mark:     |
 | Validações                  |     :white_check_mark:     |
-| Configurando store          | :eight_pointed_black_star: |
+| Configurando store          |     :white_check_mark:     |
 | Autenticação                | :eight_pointed_black_star: |
 | Armazenando perfil          | :eight_pointed_black_star: |
 | Persistindo autenticação    | :eight_pointed_black_star: |
