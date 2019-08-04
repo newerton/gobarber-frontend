@@ -8,7 +8,7 @@
 
 **Frontend - React.js**
 
-| Tools                       |            Done            |
+| Lessons                     |            Done            |
 | --------------------------- | :------------------------: |
 | Estrutura configurada       |     :white_check_mark:     |
 | Ajustes na API              |     :white_check_mark:     |
@@ -24,7 +24,7 @@
 | Configurando store          |     :white_check_mark:     |
 | Autenticação                |     :white_check_mark:     |
 | Armazenando perfil          |     :white_check_mark:     |
-| Persistindo autenticação    | :eight_pointed_black_star: |
+| Persistindo autenticação    |     :white_check_mark:     |
 | Loading da autenticação     | :eight_pointed_black_star: |
 | Exibindo toasts             | :eight_pointed_black_star: |
 | Cadastro na aplicação       | :eight_pointed_black_star: |
