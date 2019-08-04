@@ -31,7 +31,7 @@
 | Requisições autenticadas    |     :white_check_mark:     |
 | Configurando Header         |     :white_check_mark:     |
 | Estilizando notificações    |     :white_check_mark:     |
-| Notificações                | :eight_pointed_black_star: |
+| Notificações                |     :white_check_mark:     |
 | Página de perfil            | :eight_pointed_black_star: |
 | Atualizando perfil          | :eight_pointed_black_star: |
 | Foto de perfil              | :eight_pointed_black_star: |
