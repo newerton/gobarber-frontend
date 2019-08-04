@@ -27,7 +27,7 @@
 | Persistindo autenticação    |     :white_check_mark:     |
 | Loading da autenticação     |     :white_check_mark:     |
 | Exibindo toasts             |     :white_check_mark:     |
-| Cadastro na aplicação       | :eight_pointed_black_star: |
+| Cadastro na aplicação       |     :white_check_mark:     |
 | Requisições autenticadas    | :eight_pointed_black_star: |
 | Configurando Header         | :eight_pointed_black_star: |
 | Estilizando notificações    | :eight_pointed_black_star: |
