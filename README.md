@@ -30,7 +30,7 @@
 | Cadastro na aplicação       |     :white_check_mark:     |
 | Requisições autenticadas    |     :white_check_mark:     |
 | Configurando Header         |     :white_check_mark:     |
-| Estilizando notificações    | :eight_pointed_black_star: |
+| Estilizando notificações    |     :white_check_mark:     |
 | Notificações                | :eight_pointed_black_star: |
 | Página de perfil            | :eight_pointed_black_star: |
 | Atualizando perfil          | :eight_pointed_black_star: |
