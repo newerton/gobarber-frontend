@@ -23,7 +23,7 @@
 | Validações                  |     :white_check_mark:     |
 | Configurando store          |     :white_check_mark:     |
 | Autenticação                |     :white_check_mark:     |
-| Armazenando perfil          | :eight_pointed_black_star: |
+| Armazenando perfil          |     :white_check_mark:     |
 | Persistindo autenticação    | :eight_pointed_black_star: |
 | Loading da autenticação     | :eight_pointed_black_star: |
 | Exibindo toasts             | :eight_pointed_black_star: |
