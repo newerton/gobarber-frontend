@@ -29,7 +29,7 @@
 | Exibindo toasts             |     :white_check_mark:     |
 | Cadastro na aplicação       |     :white_check_mark:     |
 | Requisições autenticadas    |     :white_check_mark:     |
-| Configurando Header         | :eight_pointed_black_star: |
+| Configurando Header         |     :white_check_mark:     |
 | Estilizando notificações    | :eight_pointed_black_star: |
 | Notificações                | :eight_pointed_black_star: |
 | Página de perfil            | :eight_pointed_black_star: |
