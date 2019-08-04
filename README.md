@@ -26,7 +26,7 @@
 | Armazenando perfil          |     :white_check_mark:     |
 | Persistindo autenticação    |     :white_check_mark:     |
 | Loading da autenticação     |     :white_check_mark:     |
-| Exibindo toasts             | :eight_pointed_black_star: |
+| Exibindo toasts             |     :white_check_mark:     |
 | Cadastro na aplicação       | :eight_pointed_black_star: |
 | Requisições autenticadas    | :eight_pointed_black_star: |
 | Configurando Header         | :eight_pointed_black_star: |
