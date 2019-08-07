@@ -36,7 +36,7 @@
 | Atualizando perfil          |     :white_check_mark:     |
 | Foto de perfil              |     :white_check_mark:     |
 | Dados do Header             |     :white_check_mark:     |
-| Logout da aplicação         | :eight_pointed_black_star: |
+| Logout da aplicação         |     :white_check_mark:     |
 | Estilização do Dashboard    | :eight_pointed_black_star: |
 | Navegando entre dias        | :eight_pointed_black_star: |
 | Listando agendamentos       | :eight_pointed_black_star: |
