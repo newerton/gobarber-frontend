@@ -34,7 +34,7 @@
 | Notificações                |     :white_check_mark:     |
 | Página de perfil            |     :white_check_mark:     |
 | Atualizando perfil          |     :white_check_mark:     |
-| Foto de perfil              | :eight_pointed_black_star: |
+| Foto de perfil              |     :white_check_mark:     |
 | Dados do Header             | :eight_pointed_black_star: |
 | Logout da aplicação         | :eight_pointed_black_star: |
 | Estilização do Dashboard    | :eight_pointed_black_star: |
