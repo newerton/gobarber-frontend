@@ -33,7 +33,7 @@
 | Estilizando notificações    |     :white_check_mark:     |
 | Notificações                |     :white_check_mark:     |
 | Página de perfil            |     :white_check_mark:     |
-| Atualizando perfil          | :eight_pointed_black_star: |
+| Atualizando perfil          |     :white_check_mark:     |
 | Foto de perfil              | :eight_pointed_black_star: |
 | Dados do Header             | :eight_pointed_black_star: |
 | Logout da aplicação         | :eight_pointed_black_star: |
