@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import PerfectScrollBar from "react-perfect-scrollbar";
-import { darken, lighten } from "polished";
+import { lighten } from "polished";
 
 export const Container = styled.div`
   position: relative;

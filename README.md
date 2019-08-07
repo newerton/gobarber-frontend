@@ -32,7 +32,7 @@
 | Configurando Header         |     :white_check_mark:     |
 | Estilizando notificações    |     :white_check_mark:     |
 | Notificações                |     :white_check_mark:     |
-| Página de perfil            | :eight_pointed_black_star: |
+| Página de perfil            |     :white_check_mark:     |
 | Atualizando perfil          | :eight_pointed_black_star: |
 | Foto de perfil              | :eight_pointed_black_star: |
 | Dados do Header             | :eight_pointed_black_star: |
