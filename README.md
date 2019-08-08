@@ -38,7 +38,7 @@
 | Dados do Header             |     :white_check_mark:     |
 | Logout da aplicação         |     :white_check_mark:     |
 | Estilização do Dashboard    |     :white_check_mark:     |
-| Navegando entre dias        | :eight_pointed_black_star: |
+| Navegando entre dias        |     :white_check_mark:     |
 | Listando agendamentos       | :eight_pointed_black_star: |
 
 **Backend - Node.js**
