@@ -26,7 +26,7 @@
     "redux-saga": "^1.0.5",
     "socket.io-client": "^4.0.0",
     "styled-components": "^6.0.5",
-    "yup": "^1.2.0"
+    "yup": "^1.7.1"
   },
   "scripts": {
     "start": "react-app-rewired start",
