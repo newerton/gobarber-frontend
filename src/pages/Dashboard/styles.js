@@ -37,14 +37,14 @@ export const Container = styled.div`
 export const Time = styled.li`
   padding: 20px;
   border-radius: 4px;
-  border: 1px solid ${props => (props.available ? "transparent" : "#fff")};
-  background: ${props => (props.available ? "#fff" : "transparent")};
+  border: 1px solid ${(props) => (props.available ? "transparent" : "#fff")};
+  background: ${(props) => (props.available ? "#fff" : "transparent")};
 
-  opacity: ${props => (props.past ? 0.6 : 1)};
+  opacity: ${(props) => (props.past ? 0.6 : 1)};
 
   strong {
     display: block;
-    color: ${props => (props.available ? "#999" : "#fff")};
+    color: ${(props) => (props.available ? "#999" : "#fff")};
     font-size: 20px;
     font-weight: normal;
   }
@@ -52,6 +52,6 @@ export const Time = styled.li`
   span {
     display: block;
     margin-top: 3px;
-    color: ${props => (props.available ? "#999" : "#fff")};
+    color: ${(props) => (props.available ? "#999" : "#fff")};
   }
 `;
