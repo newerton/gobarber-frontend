@@ -1,6 +1,6 @@
-import { lighten } from "polished";
-import PerfectScrollBar from "react-perfect-scrollbar";
-import styled, { css } from "styled-components";
+import { lighten } from 'polished';
+import PerfectScrollBar from 'react-perfect-scrollbar';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   position: relative;
@@ -13,8 +13,8 @@ export const Badge = styled.button`
   cursor: pointer;
 
   ${(props) =>
-		props.hasUnread &&
-		css`
+    props.hasUnread &&
+    css`
       &::after {
         position: absolute;
         right: 0;
@@ -41,7 +41,7 @@ export const NotificationList = styled.div`
   background: rgba(0, 0, 0, 0.6);
   border-radius: 4px;
   padding: 15px 5px;
-  display: ${(props) => (props.visible ? "block" : "none")};
+  display: ${(props) => (props.visible ? 'block' : 'none')};
 
   &::before {
     content: "";
@@ -81,13 +81,13 @@ export const Notification = styled.div`
     font-size: 12px;
     border: 0;
     background: none;
-    color: ${lighten(0.2, "#7159c1")};
+    color: ${lighten(0.2, '#7159c1')};
     cursor: pointer;
   }
 
   ${(props) =>
-		props.unread &&
-		css`
+    props.unread &&
+    css`
       &::after {
         content: "";
         display: inline-block;

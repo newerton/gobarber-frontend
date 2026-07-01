@@ -1,103 +1,103 @@
-import { formatDistance, parseISO } from "date-fns";
-import pt from "date-fns/locale/pt";
-import { useEffect, useMemo, useState } from "react";
-import { MdNotifications } from "react-icons/md";
-import { useSelector } from "react-redux";
-import socketio from "socket.io-client";
-import api from "~/services/api";
+import { formatDistance, parseISO } from 'date-fns';
+import pt from 'date-fns/locale/pt';
+import { useEffect, useMemo, useState } from 'react';
+import { MdNotifications } from 'react-icons/md';
+import { useSelector } from 'react-redux';
+import socketio from 'socket.io-client';
+import api from '~/services/api';
 import {
-	Badge,
-	Container,
-	Notification,
-	NotificationList,
-	Scroll,
-} from "./styles";
+  Badge,
+  Container,
+  Notification,
+  NotificationList,
+  Scroll,
+} from './styles';
 
 export default function Notifications() {
-	const [visible, setVisible] = useState(false);
-	const [notifications, setNotifications] = useState([]);
+  const [visible, setVisible] = useState(false);
+  const [notifications, setNotifications] = useState([]);
 
-	const hasUnread = useMemo(
-		() => !!notifications.find((notification) => notification.read === false),
-		[notifications],
-	);
+  const hasUnread = useMemo(
+    () => !!notifications.find((notification) => notification.read === false),
+    [notifications],
+  );
 
-	const user = useSelector((state) => state.user.profile);
+  const user = useSelector((state) => state.user.profile);
 
-	const socket = useMemo(
-		() =>
-			socketio("http://localhost:3333", {
-				query: {
-					user_id: user.id,
-				},
-			}),
-		[user.id],
-	);
+  const socket = useMemo(
+    () =>
+      socketio('http://localhost:3333', {
+        query: {
+          user_id: user.id,
+        },
+      }),
+    [user.id],
+  );
 
-	useEffect(() => {
-		socket.on("notification", (notification) => {
-			setNotifications([notification, ...notifications]);
-		});
-	}, [socket, notifications]);
+  useEffect(() => {
+    socket.on('notification', (notification) => {
+      setNotifications([notification, ...notifications]);
+    });
+  }, [socket, notifications]);
 
-	useEffect(() => {
-		async function loadNotifications() {
-			const response = await api.get("notifications");
-			const data = response.data.map((notification) => ({
-				...notification,
-				timeDistance: formatDistance(
-					parseISO(notification.createdAt),
-					new Date(),
-					{ addSuffix: true, locale: pt },
-				),
-			}));
+  useEffect(() => {
+    async function loadNotifications() {
+      const response = await api.get('notifications');
+      const data = response.data.map((notification) => ({
+        ...notification,
+        timeDistance: formatDistance(
+          parseISO(notification.createdAt),
+          new Date(),
+          { addSuffix: true, locale: pt },
+        ),
+      }));
 
-			setNotifications(data);
-		}
+      setNotifications(data);
+    }
 
-		loadNotifications();
-	}, []);
+    loadNotifications();
+  }, []);
 
-	function handleToggleVisible() {
-		setVisible(!visible);
-	}
+  function handleToggleVisible() {
+    setVisible(!visible);
+  }
 
-	async function handleMarkAsRead(id) {
-		await api.put(`notification/${id}`);
+  async function handleMarkAsRead(id) {
+    await api.put(`notification/${id}`);
 
-		setNotifications(
-			notifications.map((notification) =>
-				notification._id === id
-					? { ...notification, read: true }
-					: notification,
-			),
-		);
-	}
+    setNotifications(
+      notifications.map((notification) =>
+        notification._id === id
+          ? { ...notification, read: true }
+          : notification,
+      ),
+    );
+  }
 
-	return (
-		<Container>
-			<Badge onClick={handleToggleVisible} hasUnread={hasUnread}>
-				<MdNotifications color="#7159c1" size={20} />
-			</Badge>
+  return (
+    <Container>
+      <Badge onClick={handleToggleVisible} hasUnread={hasUnread}>
+        <MdNotifications color="#7159c1" size={20} />
+      </Badge>
 
-			<NotificationList visible={visible}>
-				<Scroll>
-					{notifications.map((notification) => (
-						<Notification key={notification._id} unread={!notification.read}>
-							<p>{notification.content}</p>
-							<time>{notification.timeDistance}</time>
-							{!notification.read && (
-								<button
-									type="button"
-									onClick={() => handleMarkAsRead(notification._id)}
-								>
-									Marcar como lida
-								</button>
-							)}
-						</Notification>
-					))}
-				</Scroll>
-			</NotificationList>
-		</Container>
-	);
+      <NotificationList visible={visible}>
+        <Scroll>
+          {notifications.map((notification) => (
+            <Notification key={notification._id} unread={!notification.read}>
+              <p>{notification.content}</p>
+              <time>{notification.timeDistance}</time>
+              {!notification.read && (
+                <button
+                  type="button"
+                  onClick={() => handleMarkAsRead(notification._id)}
+                >
+                  Marcar como lida
+                </button>
+              )}
+            </Notification>
+          ))}
+        </Scroll>
+      </NotificationList>
+    </Container>
+  );
 }

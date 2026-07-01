@@ -1,70 +1,70 @@
-import { toast } from "react-toastify";
-import { all, call, put, takeLatest } from "redux-saga/effects";
-import api from "~/services/api";
-import history from "~/services/history";
+import { toast } from 'react-toastify';
+import { all, call, put, takeLatest } from 'redux-saga/effects';
+import api from '~/services/api';
+import history from '~/services/history';
 
-import { signFailure, signInSuccess } from "./actions";
+import { signFailure, signInSuccess } from './actions';
 
 export function* signIn({ payload }) {
-	try {
-		const { email, password } = payload;
+  try {
+    const { email, password } = payload;
 
-		const response = yield call(api.post, "sessions", {
-			email,
-			password,
-		});
+    const response = yield call(api.post, 'sessions', {
+      email,
+      password,
+    });
 
-		const { token, user } = response.data;
+    const { token, user } = response.data;
 
-		if (!user.provider) {
-			toast.error("Usuário não é prestador");
-			return;
-		}
+    if (!user.provider) {
+      toast.error('Usuário não é prestador');
+      return;
+    }
 
-		api.defaults.headers.Authorization = `Bearer ${token}`;
+    api.defaults.headers.Authorization = `Bearer ${token}`;
 
-		yield put(signInSuccess(token, user));
+    yield put(signInSuccess(token, user));
 
-		history.push("/dashboard");
-	} catch (err) {
-		toast.error("Falha na auttenticação, verifique seus dados");
-		console.tron.log(err);
-		yield put(signFailure());
-	}
+    history.push('/dashboard');
+  } catch (err) {
+    toast.error('Falha na auttenticação, verifique seus dados');
+    console.tron.log(err);
+    yield put(signFailure());
+  }
 }
 
 export function* signUp({ payload }) {
-	try {
-		const { name, email, password } = payload;
-		yield call(api.post, "users", {
-			name,
-			email,
-			password,
-			provider: true,
-		});
-		history.push("/");
-	} catch (_err) {
-		toast.error("Falha no cadastro, verifique seus dados");
-		yield put(signFailure());
-	}
+  try {
+    const { name, email, password } = payload;
+    yield call(api.post, 'users', {
+      name,
+      email,
+      password,
+      provider: true,
+    });
+    history.push('/');
+  } catch (_err) {
+    toast.error('Falha no cadastro, verifique seus dados');
+    yield put(signFailure());
+  }
 }
 export function setToken({ payload }) {
-	if (!payload) return;
+  if (!payload) return;
 
-	const { token } = payload.auth;
+  const { token } = payload.auth;
 
-	if (token) {
-		api.defaults.headers.Authorization = `Bearer ${token}`;
-	}
+  if (token) {
+    api.defaults.headers.Authorization = `Bearer ${token}`;
+  }
 }
 
 export function signOut() {
-	history.push("/");
+  history.push('/');
 }
 
 export default all([
-	takeLatest("persist/REHYDRATE", setToken),
-	takeLatest("@auth/SIGN_IN_REQUEST", signIn),
-	takeLatest("@auth/SIGN_UP_REQUEST", signUp),
-	takeLatest("@auth/SIGN_OUT", signOut),
+  takeLatest('persist/REHYDRATE', setToken),
+  takeLatest('@auth/SIGN_IN_REQUEST', signIn),
+  takeLatest('@auth/SIGN_UP_REQUEST', signUp),
+  takeLatest('@auth/SIGN_OUT', signOut),
 ]);
