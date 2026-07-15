@@ -48,7 +48,7 @@
     ]
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.3",
+    "@biomejs/biome": "^2.5.4",
     "customize-cra": "^1.0.0",
     "prettier": "^3.9.5"
   }
