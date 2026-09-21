@@ -50,7 +50,7 @@
   "devDependencies": {
     "@biomejs/biome": "^2.5.14",
     "customize-cra": "^1.0.0",
-    "prettier": "^3.9.6"
+    "prettier": "^3.9.8"
   },
   "overrides": {
     "react-router": "^8.3.0"
